@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rousseau French School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flag"></div>
+    <header>
+        <img src="images\logo.jpg" alt="">
+        <h1>Rousseau French School</h1>
+        <p>Learn French with Excellence</p>
+    </header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h2>Bienvenue à l’École Française Rousseau</h2>
+    <p>Where students become confident French speakers</p>
+</section>
+
+<section id="about">
+    <h2>About the Founder: Aluko Samuel</h2>
+    <div class="about-container">
+        <img src="images\dad1.jpg" alt="The Founder">
+        <div class="about-text">
+        <p>The founder is a professional French teacher who graduated with a 
+            First Class degree in french with over 17 years of teaching experience.
+            His aim is helping students speak French fluently and confidently. </p> <br>
+            <p>A committed educator specializing in Communication Skill and French instruction, 
+            with over 17 years of experience in fostering language proficiency 
+            and cultural understanding. Through engaging lessons tailored to diverse learning needs,
+             He promotes academic excellence while supporting students' personal development. 
+             By integrating pastoral care and extracurricular activities such as French clubs, 
+             He contributes to a holistic and inclusive educational environment.</p> <br>
+<p>With a dedication to teamwork, leadership, and mentorship, 
+He empowers learners to thrive both academically and socially.
+ He is an expertise in innovative teaching approaches,
+  including game-based learning and mental well-being strategies, 
+  ensures dynamic and impactful experiences. 
+  He remains passionate about inspiring students to build noble character
+   and essential skills for success in an evolving global society.
+        </p>
+        </div>
+    </div>
+</section>
+
+<section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses">
+        <div class="card">Beginner French</div>
+        <div class="card">Intermediate French</div>
+        <div class="card">Advanced French</div>
+        <div class="card">Exam Preparation</div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>French Culture & Civilization</h3>
+            <p>Learn about French traditions, history, lifestyle, and cultural practices to deepen your understanding of the language.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>💼 Business French</h3>
+            <p>Master professional communication in French for business meetings, emails, and international opportunities.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>📝 Exam Preparation</h3>
+            <p>Prepare for French exams with structured lessons, past questions, and expert guidance.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🌍 Translation & Interpretation</h3>
+            <p>Professional translation and interpretation services for documents, events, and communication needs.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="images\dadspeak.jpg" alt="Speaking"> <br>
+        <img src="images\logo2.jpg" alt="France">
+        <br>
+        <img src="images\flag.jpg" alt="French Flag">
+        <img src="images\logo.jpg" alt="School Logo">
+        <img src="images\teach.jpg" alt="Explaining">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2> <br>
+    <p>📞 Phone: 08030731788</p> <br>
+    <p>📩 Email:<a href=" rousseaufrench2015@gmail.com"> rousseaufrench2015@gmail.com</a></p> <br>
+    <p>📍 Location: Ikoyi, Lagos State, Nigeria</p>
+</section>
+
+<section id="register">
+    <h2>Register Now</h2>
+   <form class="register-form" action="https://formspree.io/f/mjgpezrl" method="POST">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+    
+    <input type="email" name="email" placeholder="Email Address" required>
+    
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <!-- NEW FIELD: Nationality -->
+    <input type="text" name="nationality" placeholder="Nationality" required>
+
+    <!-- NEW FIELD: Gender -->
+    <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+
+    <!-- NEW FIELD: Age Range -->
+    <select name="age_range" required>
+        <option value="">Select Age Range</option>
+        <option>Children</option>
+        <option>Teens</option>
+        <option>Adults</option>
+    </select>
+
+    <!-- COURSE -->
+    <select name="course" required>
+        <option value="">Select Course</option>
+        <option>Beginner French</option>
+        <option>Intermediate French</option>
+        <option>Advanced French</option>
+        <option>Exam Preparation</option>
+    </select>
+
+    <textarea name="message" placeholder="Additional Message"></textarea>
+
+    <input type="hidden" name="_subject" value="New Student Registration Form">
+    <input type="hidden" name="_redirect" value="https://tanku.netlify.app/">
+
+    <button type="submit">Submit</button>
+
+</form>
+</section> 
+
+
+<footer>
+    <p>©Rousseau French School</p>
+
+    <!-- Your form is above -->
+
+    <script>
+const form = document.querySelector(".register-form");
+
+if (form) {
+    form.addEventListener("submit", function() {
+        setTimeout(() => {
+            window.location.href = "thankyou.html";
+        }, 1000);
+    });
+}
+</script>
+
+</body>
+</html>
