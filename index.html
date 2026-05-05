@@ -6,7 +6,9 @@
     <title>Rousseau French School</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <canvas id="particle-canvas"></canvas>
     <div class="flag"></div>
     <header>
         <img src="images\logo.jpg" alt="">
@@ -22,43 +24,113 @@
 </nav>
 
 <section class="hero">
-    <h2>Bienvenue à l’École Française Rousseau</h2>
-    <p>Where students become confident French speakers</p>
+    <div class="hero-content">
+    <h1 class="hero-title">Bienvenue à l’École Française Rousseau</h1>
+    <p class="hero-sub">Where students become confident French speakers</p>
+    
+    <a href="#courses" class="hero-btn"><strong>Get Started</strong></a>
+    </div>
 </section>
 
 <section id="about">
-    <h2>About the Founder: Aluko Samuel</h2>
+
     <div class="about-container">
-        <img src="images\dad1.jpg" alt="The Founder">
-        <div class="about-text">
-        <p>The founder is a professional French teacher who graduated with a 
-            First Class degree in french with over 17 years of teaching experience.
-            His aim is helping students speak French fluently and confidently. </p> <br>
-            <p>A committed educator specializing in Communication Skill and French instruction, 
-            with over 17 years of experience in fostering language proficiency 
-            and cultural understanding. Through engaging lessons tailored to diverse learning needs,
-             He promotes academic excellence while supporting students' personal development. 
-             By integrating pastoral care and extracurricular activities such as French clubs, 
-             He contributes to a holistic and inclusive educational environment.</p> <br>
-<p>With a dedication to teamwork, leadership, and mentorship, 
-He empowers learners to thrive both academically and socially.
- He is an expertise in innovative teaching approaches,
-  including game-based learning and mental well-being strategies, 
-  ensures dynamic and impactful experiences. 
-  He remains passionate about inspiring students to build noble character
-   and essential skills for success in an evolving global society.
-        </p>
+
+        <!-- LEFT (IMAGE) -->
+        <div class="about-image reveal">
+            <img src="images\dad1.jpg" alt="Founder">
         </div>
+
+        <!-- RIGHT (TEXT) -->
+        <div class="about-text reveal">
+            <h2>About The Founder; Aluko Samuel</h2>
+
+            <p>
+                Our founder is a highly experienced French educator with over 17 years of teaching experience. 
+                He is passionate about helping students speak French fluently and confidently.
+            </p>
+
+            <p>
+                Through engaging lessons, cultural exposure, and personalized teaching methods, 
+                we ensure every learner develops both language proficiency and confidence.
+            </p>
+
+            <p>
+                We are committed to excellence, innovation, and creating a supportive learning environment 
+                for students of all ages.
+            </p>
+
+        </div>
+
     </div>
+
+</section>
+
+<section class="program-section">
+    <div class="particles"></div>
+    <!-- LEFT SIDE -->
+    <div class="program-left">
+
+        <div class="program-box">
+            <h3>👶 EARLY YEARS (Ages 2–5)</h3>
+            <ul>
+                <li>Phonics & Early Reading</li>
+                <li>Number Recognition & Counting</li>
+                <li>Fine Motor Skills Development</li>
+                <li>Speech & Language Support</li>
+                <li>Play-Based Learning Approach</li>
+            </ul>
+        </div>
+
+        <div class="program-box">
+            <h3>💡 PRIMARY SCHOOL (Ages 6–11)</h3>
+            <ul>
+                <li>English (Reading, Writing, Comprehension)</li>
+                <li>Mathematics</li>
+                <li>Homework Support</li>
+                <li>Exam Preparation</li>
+            </ul>
+        </div>
+
+        <div class="program-box">
+            <h3> UK CURRICULUM SUPPORT</h3>
+            <ul>
+                <li>SATs Preparation</li>
+                <li>11+ Entrance Exam Coaching</li>
+                <li>Verbal & Non-Verbal Reasoning</li>
+                <li>Structured Learning Plans</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="program-right">
+
+        <div class="teacher-card">
+            <img src="images\dad1.jpg" alt="Teacher">
+
+            <h2>Mr. Samuel Aluko</h2>
+
+            <ul class="cert-list">
+                <li>TRCN Certified</li>
+                <li>TEFL Certified</li>
+                <li>Google Certified Educator</li>
+                <li>Experienced Language Instructor</li>
+            </ul>
+        </div>
+
+    </div>
+
 </section>
 
 <section id="courses">
     <h2>Our Courses</h2>
     <div class="courses">
-        <div class="card">Beginner French</div>
-        <div class="card">Intermediate French</div>
-        <div class="card">Advanced French</div>
-        <div class="card">Exam Preparation</div>
+        <div class="card"><strong>Beginner French</strong></div>
+        <div class="card"><strong>Intermediate French</strong></div>
+        <div class="card"><strong>Advanced French</strong></div>
+        <div class="card"><strong>Exam Preparation</strong></div>
     </div>
 </section>
 
@@ -67,99 +139,200 @@ He empowers learners to thrive both academically and socially.
 
     <div class="services-container">
 
-        <div class="service-card">
+        <div class="service-card glass reveal">
+            <div class="icon">🥐</div>
+
             <h3>French Culture & Civilization</h3>
             <p>Learn about French traditions, history, lifestyle, and cultural practices to deepen your understanding of the language.</p>
         </div>
 
-        <div class="service-card">
-            <h3>💼 Business French</h3>
+        <div class="service-card glass reveal">
+            <div class="icon">💼</div>
+
+            <h3>Business French</h3>
             <p>Master professional communication in French for business meetings, emails, and international opportunities.</p>
         </div>
 
-        <div class="service-card">
-            <h3>📝 Exam Preparation</h3>
+        <div class="service-card glass reveal">
+            <div class="icon">📝</div>
+            <h3>Exam Preparation</h3>
             <p>Prepare for French exams with structured lessons, past questions, and expert guidance.</p>
         </div>
 
-        <div class="service-card">
-            <h3>🌍 Translation & Interpretation</h3>
+        <div class="service-card glass reveal">
+            <div class="icon">🌍</div>
+            <h3>Translation & Interpretation</h3>
             <p>Professional translation and interpretation services for documents, events, and communication needs.</p>
         </div>
 
     </div>
 </section>
 
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="images\dadspeak.jpg" alt="Speaking"> <br>
-        <img src="images\logo2.jpg" alt="France">
-        <br>
-        <img src="images\flag.jpg" alt="French Flag">
-        <img src="images\logo.jpg" alt="School Logo">
-        <img src="images\teach.jpg" alt="Explaining">
-    </div>
+<section class="gallery-section">
+  <h2 class="gallery-title">Our Gallery</h2>
+
+  <!-- Filters -->
+  <div class="gallery-filters">
+    <button class="active" onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('views')">Views</button>
+    <button onclick="filterGallery('students')">Students</button>
+    <button onclick="filterGallery('teachings')">Teachings</button>
+  </div>
+
+  <!-- Grid -->
+  <div class="gallery-grid">
+
+    <img src="images\dadspeak.jpg" class="gallery-item teachings" onclick="openModal(this)">
+    <img src="images\eiffel.jpg" class="gallery-item views" onclick="openModal(this)">
+    <img src="images\teach.jpg" class="gallery-item students" onclick="openModal(this)">
+    <img src="images\flag.jpg" class="gallery-item views" onclick="openModal(this)">
+
+  </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Us</h2> <br>
-    <p>📞 Phone: 08030731788</p> <br>
-    <p>📩 Email:<a href=" rousseaufrench2015@gmail.com"> rousseaufrench2015@gmail.com</a></p> <br>
-    <p>📍 Location: Ikoyi, Lagos State, Nigeria</p>
+<!-- Modal -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <img id="modalImg">
+</div>
+
+<section class="contact-hub">
+  <h2 class="contact-title">Get In Touch</h2>
+  <p class="contact-subtitle">Reach us through any channel below</p>
+
+  <div class="contact-grid">
+
+    <!-- Email -->
+    <div class="contact-card">
+      <div class="icon">📧</div>
+      <h3>Email</h3>
+      <a class="email-link" 
+        href="mailto:rousseaufrench2015@gmail.com">rousseaufrench <br>2015@gmail.com</a>
+    </div>
+
+    <!-- WhatsApp -->
+    <div class="contact-card highlight">
+      <div class="icon">💬</div>
+      <h3>WhatsApp</h3>
+      <p>+234 803 073 1788</p>
+      <button>Chat Now</button>
+    </div>
+
+    <!-- Location -->
+    <div class="contact-card">
+      <div class="icon">📍</div>
+      <h3>Location</h3>
+      <p>Ikoyi, Lagos State</p>
+    </div>
+
+    <!-- QR Code -->
+    <div class="contact-card qr-card">
+      <h3>Scan QR</h3>
+      <img src="images\qr.jpeg" alt="QR Code">
+      <p>Instant access to contact</p>
+    </div>
+
+  </div>
 </section>
 
 <section id="register">
     <h2>Register Now</h2>
-   <form class="register-form" action="https://formspree.io/f/mjgpezrl" method="POST">
 
-    <input type="text" name="name" placeholder="Full Name" required>
-    
-    <input type="email" name="email" placeholder="Email Address" required>
-    
-    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <form class="register-form" action="https://formspree.io/f/mjgpezrl" method="POST">
 
-    <!-- NEW FIELD: Nationality -->
-    <input type="text" name="nationality" placeholder="Nationality" required>
+        <!-- NAME -->
+        <input type="text" name="name" placeholder="Full Name" required>
 
-    <!-- NEW FIELD: Gender -->
-    <select name="gender" required>
-        <option value="">Select Gender</option>
-        <option>Male</option>
-        <option>Female</option>
-    </select>
+        <input type="text" name="tel" placeholder="Phone Number" required>
 
-    <!-- NEW FIELD: Age Range -->
-    <select name="age_range" required>
-        <option value="">Select Age Range</option>
-        <option>Children</option>
-        <option>Teens</option>
-        <option>Adults</option>
-    </select>
+        <!-- EMAIL -->
+        <input type="email" name="email" placeholder="Email Address" required>
 
-    <!-- COURSE -->
-    <select name="course" required>
-        <option value="">Select Course</option>
-        <option>Beginner French</option>
-        <option>Intermediate French</option>
-        <option>Advanced French</option>
-        <option>Exam Preparation</option>
-    </select>
+        <!-- NATIONALITY -->
+        <input type="text" name="nationality" placeholder="Nationality" required>
 
-    <textarea name="message" placeholder="Additional Message"></textarea>
+        <!-- GENDER -->
+        <div class="custom-select">
+            <div class="select-selected">Select Gender</div>
+            <div class="select-items">
+                <div>Male</div>
+                <div>Female</div>
+            </div>
+        </div>
+        <input type="hidden" name="gender" required>
 
-    <input type="hidden" name="_subject" value="New Student Registration Form">
-    <input type="hidden" name="_redirect" value="https://tanku.netlify.app/">
+        <!-- AGE -->
+        <div class="custom-select">
+            <div class="select-selected">Select Age Range</div>
+            <div class="select-items">
+                <div>Children</div>
+                <div>Teens</div>
+                <div>Adult</div>
+            </div>
+        </div>
+        <input type="hidden" name="age" required>
 
-    <button type="submit">Submit</button>
+        <div class="custom-select">
+            <div class="select-selected">Select Course</div>
+            <div class="select-items">
+                <div>Beginner French</div>
+                <div>Intermediate French</div>
+                <div>Advanced French</div>
+                <div>Exam Preparation</div>
+            </div>
+        </div>
+        <input type="hidden" name="age" required>
 
-</form>
-</section> 
+        <!-- SUBMIT -->
+        <button type="submit">Submit Registration</button>
 
+    </form>
+</section>
 
-<footer>
-    <p>©Rousseau French School</p>
+<footer class="site-footer">
 
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2>Rousseau</h2>
+      <p>Building better learning experiences with clean design and simple systems.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:rousseaufrench2015@gmail.com">rousseaufrench2015@gmail.com</a></p>
+      <p>WhatsApp: +234 803 073 1788</p>
+      <p>Ikoyi, Lagos State</p>
+    </div>
+
+    <!-- Socials -->
+    <div class="footer-socials">
+      <h3>Follow Us</h3>
+      <div class="icons">
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Rousseau. All rights reserved.</p>
+  </div>
+
+</footer>
     <!-- Your form is above -->
 
     <script>
@@ -172,6 +345,192 @@ if (form) {
         }, 1000);
     });
 }
+</script>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+function showOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < windowHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", showOnScroll);
+showOnScroll(); // run once on load
+</script>
+
+<script>
+const particlesContainer = document.querySelector(".particles");
+
+for (let i = 0; i < 25; i++) {
+    const particle = document.createElement("span");
+
+    particle.style.left = Math.random() * 100 + "%";
+    particle.style.animationDuration = (5 + Math.random() * 5) + "s";
+    particle.style.animationDelay = Math.random() * 5 + "s";
+
+    particlesContainer.appendChild(particle);
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector(".register-form");
+    const spinner = document.getElementById("spinner");
+
+    form.addEventListener("submit", () => {
+        spinner.style.display = "block";
+    });
+});
+</script>
+
+<script>
+document.querySelectorAll(".custom-select").forEach(select => {
+
+    const selected = select.querySelector(".select-selected");
+    const options = select.querySelector(".select-items");
+    const hiddenInput = select.nextElementSibling;
+
+    // open/close
+    selected.addEventListener("click", () => {
+        options.style.display = options.style.display === "block" ? "none" : "block";
+    });
+
+    // select option
+    options.querySelectorAll("div").forEach(option => {
+        option.addEventListener("click", () => {
+            selected.textContent = option.textContent;
+            hiddenInput.value = option.textContent;
+            options.style.display = "none";
+        });
+    });
+
+});
+
+// close on outside click
+document.addEventListener("click", e => {
+    document.querySelectorAll(".custom-select").forEach(select => {
+        if (!select.contains(e.target)) {
+            select.querySelector(".select-items").style.display = "none";
+        }
+    });
+});
+</script>
+
+<script>
+function openModal(img) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  modalImg.src = img.src;
+}
+
+// Close modal
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+
+// Filter system
+function filterGallery(category) {
+  const items = document.querySelectorAll(".gallery-item");
+  const buttons = document.querySelectorAll(".gallery-filters button");
+
+  buttons.forEach(btn => btn.classList.remove("active"));
+
+  event.target.classList.add("active");
+
+  items.forEach(item => {
+    if (category === "all") {
+      item.style.display = "block";
+    } else {
+      item.style.display = item.classList.contains(category)
+        ? "block"
+        : "none";
+    }
+  });
+}
+</script>
+
+<script>
+document.querySelector(".highlight button").addEventListener("click", function () {
+  window.open("https://wa.link/kut1v1", "_blank");
+});
+</script>
+
+<script>
+const canvas = document.getElementById("particle-canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particlesArray = [];
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 3 + 1;
+    this.speedX = (Math.random() - 0.5) * 0.6;
+    this.speedY = (Math.random() - 0.5) * 0.6;
+  }
+
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+
+    // wrap around edges
+    if (this.x > canvas.width) this.x = 0;
+    if (this.x < 0) this.x = canvas.width;
+    if (this.y > canvas.height) this.y = 0;
+    if (this.y < 0) this.y = canvas.height;
+  }
+
+  draw() {
+    ctx.fillStyle = "rgba(56, 189, 248, 0.9)";
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function initParticles() {
+  particlesArray = [];
+  let numberOfParticles = 80;
+
+  for (let i = 0; i < numberOfParticles; i++) {
+    particlesArray.push(new Particle());
+  }
+}
+
+function animateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  particlesArray.forEach(p => {
+    p.update();
+    p.draw();
+  });
+
+  requestAnimationFrame(animateParticles);
+}
+
+initParticles();
+animateParticles();
+
+// resize support
+window.addEventListener("resize", function () {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  initParticles();
+});
 </script>
 
 </body>
