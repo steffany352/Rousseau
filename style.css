@@ -1143,11 +1143,17 @@ html {
     box-shadow:0 20px 50px rgba(0,0,0,.3);
 }
 
-.qualification-card img{
-    width:350px;
-    border-radius:18px;
-    transition:.4s;
+
+  .qualification-card img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
 }
+
 
 .qualification-card img:hover{
     transform:scale(1.04);
@@ -1168,6 +1174,42 @@ html {
     line-height:1.8;
     font-size:18px;
 }
+
+.qts-certificate {
+  width: 350px;
+  transition: 0.4s;
+
+    border-radius: 18px;
+}
+
+.qts-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+}
+
+.certificate-btn {
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:#ffd700;
+
+    color:#002366;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
 
 #why-us{
     padding:90px 8%;
@@ -1247,3 +1289,4 @@ html {
     }
 
 }
+
